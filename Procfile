@@ -1,1 +1,1 @@
-web: gunicorn master.wsgi:application
+web: gunicorn RoversOnMars.wsgi:application
