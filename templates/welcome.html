@@ -1,0 +1,50 @@
+ {% extends 'base.html' %}
+{% block content %}
+<h1 class="text-center">Mars Exploration Rovers Overview</h1>
+<hr class="hrstyle">
+<div class="row mt-5">
+ <div class="col-12 col-md-5">
+    <img  src="../media/rovers/curiosity.jpg" class="img-fluid mt-4" alt="">
+    </div>
+ <div class="col-12 col-md-7">
+    <h3>Curiosity Rover Mission Overview</h3>
+<p class="pt-3 pb-3 gotu">
+Part of NASA's Mars Science Laboratory mission, Curiosity is the largest and most
+ capable rover ever sent to Mars. It launched November 26, 2011 and landed on Mars
+  at 10:32 p.m. PDT on Aug. 5, 2012 (1:32 a.m. EDT on Aug. 6, 2012).
+</p>
+<p class="roboto-medium">
+Curiosity set out to answer the question: Did Mars ever have the right environmental
+ conditions to support small life forms called microbes? Early in its mission,
+  Curiosity's scientific tools found chemical and mineral evidence of past habitable
+   environments on Mars. It continues to explore the rock record from a time when Mars
+    could have been home to microbial life.
+</p>
+    </div>
+{% comment %} Second Paragraph {% endcomment %}
+    <div class="col-12 col-md-7 mt-5">
+    <hr class="hrstyle">
+    <h3>The Adventure Twins</h3>
+<p class="pt-3 pb-3 gotu">
+Spirit and Opportunity landed on Mars January 3 and January 24,
+ 2004 PST (Jan. 4 and Jan. 25 UTC). Both rovers lived well beyond their planned 90-day missions.
+  Opportunity worked nearly 15 years on Mars and broke the driving record
+   for putting the most miles on the odometer.
+</p>
+
+<p class="roboto-medium">
+The twin geologists, Spirit and Opportunity, have both found dramatic evidence that:
+</p>
+<ul class="list-unstyled">
+    <li class="roboto-bold"><i class="fas fa-arrow-circle-right"></i> Long ago Mars was wetter
+</li>
+    <li class="roboto-bold"><i class="fas fa-arrow-circle-right"></i> Conditions at Mars could have sustained microbial life, if any existed</li>
+</ul>
+<p class="mt-3 gotu">With data from the rovers, mission scientists have reconstructed an ancient past when Mars was awash in water. Spirit and Opportunity each found evidence for past wet
+ conditions that possibly could have supported microbial life.</p>
+    </div>
+    <div class="col-12 col-md-5">
+    <img  src="../media/rovers/twin-rovers.png" class="img-fluid mt-4" alt="">
+    </div>
+</div>
+ {% endblock %}
