@@ -24,9 +24,9 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = '80b8_uu8lh)aiwj@jdi==^*m++4=hf3d4pw4dw64cyu@cw9897'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['rovers-on-mars-1.herokuapp.com']
 
 
 # Application definition
