@@ -24,7 +24,8 @@ varmardicamera = "sol=100&camera=mardi&"
 varnavcamcamera = "camera=navcam&earth_date=2019-4-19&page=1&"
 
 varapi = "api_key="
-varapikey = os.environ.get('NASA_API')
+varapikey =  os.environ.get('NASA_API')
+
 
 # Create your views here.
 def cfhaz(request):

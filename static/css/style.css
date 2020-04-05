@@ -1,6 +1,11 @@
 @import url('https://fonts.googleapis.com/css?family=Gotu|Roboto:400,500,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IM+Fell+French+Canon+SC&family=Indie+Flower&family=Josefin+Sans:wght@300;400&display=swap');
 
-.bg-navigation {
+html, body {
+    background-color: black !important;
+}
+
+.bg-dark-custom {
     background-color: black !important;
 }
 
@@ -11,9 +16,9 @@
 }
 
 .navbar-nav li a {
-    color: cornflowerblue !important;
-    font-family: 'Roboto', sans-serif;
-    font-weight: 500;
+    color: #35d45f !important;
+    font-family: 'IM Fell French Canon SC', serif;
+    font-weight: 400;
     letter-spacing: 0.1em;
   
 }
@@ -58,7 +63,7 @@ transition-duration: 0.1s;
 .hrstyle {
     border: 0;
     height: 1px;
-    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+    background-image: linear-gradient(to right, rgba(3, 252, 132), rgba(0, 0, 0, 0.75), rgba(3, 252, 132));
 }
 
 .cameras-style ul li a {
@@ -73,4 +78,16 @@ transition-duration: 0.1s;
     transition-duration: 0.2s;
     text-decoration: none;
     color: #000;
+}
+
+.text-green {
+    color: #58a17e;
+}
+
+.text-josefin {
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.text-sharp {
+    color: #10e032;
 }

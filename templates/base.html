@@ -27,7 +27,7 @@
 
 <body>
 <header>
-<nav class="navbar navbar-expand-lg bg-navigation">
+<nav class="navbar navbar-expand-lg bg-dark-custom">
   <a class="navbar-brand brand-custom" href="{% url 'home' %}"> <img  style="width:150px; height: 50px;" src="/../media/marslogo.jpg" alt="Picture From Mars"> </a>
   <button class="navbar-toggler custom-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon">
@@ -37,29 +37,27 @@
   <div class="collapse navbar-collapse" id="navbarNav">
     <ul class="navbar-nav">
       <li class="nav-item active">
-        <a class="nav-link mr-3" href="#"><i class="fas fa-home"></i> Home <span class="sr-only">(current)</span></a>
+        <a class="nav-link mr-3" href="{% url 'home' %}"><i class="fas fa-home"></i> Home <span class="sr-only">(current)</span></a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="{% url 'C_FHAZ' %}"><i class="fas fa-truck-monster"></i> Curiosity</a>
+        <a class="nav-link" href="{% url 'C_FHAZ' %}"><i class="fas fa-angle-right"></i> Curiosity</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#"><i class="fas fa-truck-monster"></i> Opportunity</a>
+        <a class="nav-link" href="#"><i class="fas fa-angle-right"></i> Opportunity</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#"><i class="fas fa-truck-monster"></i> Spirit</a>
+        <a class="nav-link" href="#"><i class="fas fa-angle-right"></i> Spirit</a>
       </li>
     </ul>
   </div>
 </nav>
- {% block rovnav %}
 
-{% endblock %}
 </header>
    <div class="container">
             <h1>{% block page_heading %}
                 {% endblock %}</h1>
         </div>
-        <div class="container">
+        <div class="container bg-dark-custom">
             {% if messages %}
             <div class="alert alert-success">
                 <div class="messages">
@@ -72,7 +70,9 @@
             {% block content %}
             {% endblock %}
         </div>
- 
+  {% block rovnav %}
+
+{% endblock %}
 </body>
 
 </html>
