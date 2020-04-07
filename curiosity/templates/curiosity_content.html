@@ -23,25 +23,25 @@
     {% comment %} Dropdown {% endcomment %}
     <!-- Default dropright button -->
 <div class="btn-group dropright mt-5">
-  <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+  <button type="button" class="btn btn-bg-orange dropdown-toggle mb-4" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
     Cameras
   </button>
-  <div class="dropdown-menu cameras-style">
+  <div class="dropdown-menu cameras-style bg-dark-custom">
     <!-- Dropdown menu links -->
     <ul class="list-unstyled">
-      <li><a href="{% url 'C_FHAZ' %}">FHAZ </a></li>
+      <li class="text-center"><a href="{% url 'C_FHAZ' %}">FHAZ </a></li>
       <hr class="hrstyle">
-      <li><a href="{% url 'C_RHAZ' %}">RHAZ </a></li>
+      <li class="text-center"><a href="{% url 'C_RHAZ' %}">RHAZ </a></li>
       <hr class="hrstyle">
-      <li><a href="{% url 'C_MAST' %}">MAST </a></li>
+      <li class="text-center"><a href="{% url 'C_MAST' %}">MAST </a></li>
       <hr class="hrstyle">
-      <li><a href="{% url 'C_CHEMCAM' %}">CHEMCAM </a></li>
+      <li class="text-center"><a href="{% url 'C_CHEMCAM' %}">CHEMCAM </a></li>
       <hr class="hrstyle">
-      <li><a href="{% url 'C_MAHLI' %}">MAHLI </a></li>
+      <li class="text-center"><a href="{% url 'C_MAHLI' %}">MAHLI </a></li>
       <hr class="hrstyle">
-      <li><a href="{% url 'C_MARDI' %}">MARDI </a></li>
+      <li class="text-center"><a href="{% url 'C_MARDI' %}">MARDI </a></li>
       <hr class="hrstyle">
-      <li><a href="{% url 'C_NAVCAM' %}">NAVCAM </a></li>
+      <li class="text-center"><a href="{% url 'C_NAVCAM' %}">NAVCAM </a></li>
       <hr class="hrstyle">
     </ul>
   </div>
@@ -81,31 +81,31 @@
 <div class="container">
 <div class="row mt-5">
 <div class="col-12">
-<h4 class="mb-3">Key Facts about NASA's Curiosity Rover</h4>
+<h4 class="mb-3 text-green">Key Facts about NASA's Curiosity Rover</h4>
     <hr class="hrstyle">
     </div>
   <div class="col-12 col-md-4">
   <img  src="../../media/rovers/curiosity.jpg" class="img-fluid mt-4" alt="">
   </div>
   <div class="col-12 col-md-8">
-  <h5 class="mt-3">Launch:</h5>
-  <p class="gotu">
+  <h5 class="mt-3 text-green">Launch:</h5>
+  <p class="gotu text-sharp">
   7:02 a.m. PST, Nov. 26, 2011 (10:02 a.m. EST)
   </p>
-  <h5>Launch Vehicle: </h5>
-  <p class="gotu">
+  <h5 class="text-green">Launch Vehicle: </h5>
+  <p class="gotu text-sharp">
   Atlas V-451 Landing: 10:32 p.m. PDT, Aug. 5, 2012 (1:32 a.m. EDT, Aug. 6, 2012)
   </p>
-  <h5> Landing Site</h5>
-  <p class="gotu">
+  <h5 class="text-green"> Landing Site</h5>
+  <p class="gotu text-sharp">
   Gale Crater
   </p>
   </div>
   <div class="col-12">
-<h4 class="mb-3">Curiosity Rover Science</h4>
+<h4 class="mb-3 text-green">Curiosity Rover Science</h4>
     <hr class="hrstyle">
-    <p class="roboto-bold">Surveying Gale Crater </p>
-    <p class="gotu">
+    <p class="roboto-bold text-green">Surveying Gale Crater </p>
+    <p class="gotu text-sharp">
     Curiosity explores Gale Crater and acquires rock, soil,
      and air samples for onboard analysis. The car-size rover is about
       as tall as a basketball player and uses a 7 foot-long arm to place
@@ -116,8 +116,8 @@
           rock samples. It hunts for special rocks that formed in water and/or
            have signs of organics.
     </p>
-     <p class="roboto-bold">Strong, Smart and Curious </p>
-    <p class="gotu">
+     <p class="roboto-bold text-green">Strong, Smart and Curious </p>
+    <p class="gotu text-sharp">
     Curiosity carries the biggest, most advanced instruments for scientific studies
      ever sent to the Martian surface. The history of Martian climate and geology is
       written in the chemistry and structure of the rocks and soil. Curiosity reads
@@ -125,20 +125,20 @@
         the chemical fingerprints present in different rocks and soils to determine
          their composition and history, especially their past interactions with water.
     </p>
-     <p class="roboto-bold">Coming in for a Landing </p>
-    <p class="gotu">
+     <p class="roboto-bold text-green">Coming in for a Landing </p>
+    <p class="gotu text-sharp">
    Mars Science Laboratory arrived at Mars through technological innovations that tested a completely
     new landing method. The spacecraft descended on a parachute, then during the final seconds before
      landing, the landing system fired rockets to allow it to hover while a tether lowered Curiosity
       to the surface. The rover landed on its wheels, the tether was cut, and the landing system flew
        off to crash-land a safe distance away.
     </p>
-     <p class="roboto-bold">The Mars Science Laboratory mission represents a huge step in Mars exploration because it has: </p>
+     <p class="roboto-bold text-green">The Mars Science Laboratory mission represents a huge step in Mars exploration because it has: </p>
     <ul class="list-unstyled ml-3">
-    <li class="roboto-bold"><i class="fas fa-arrow-circle-right"></i> Demonstrated the ability to land a very large, heavy rover to the surface of Mars
+    <li class="roboto-bold text-sharp mt-2"><i class="fas fa-arrow-circle-right"></i> Demonstrated the ability to land a very large, heavy rover to the surface of Mars
 </li>
-    <li class="roboto-bold"><i class="fas fa-arrow-circle-right"></i> Demonstrated the ability to land more precisely in a 12.4-mile (20-kilometer) landing area</li>
-     <li class="roboto-bold"><i class="fas fa-arrow-circle-right"></i> Demonstrated long-range mobility on Mars for studying diverse environments and analyzing samples found in different settings</li>
+    <li class="roboto-bold text-sharp mt-2"><i class="fas fa-arrow-circle-right"></i> Demonstrated the ability to land more precisely in a 12.4-mile (20-kilometer) landing area</li>
+     <li class="roboto-bold text-sharp mt-2"><i class="fas fa-arrow-circle-right"></i> Demonstrated long-range mobility on Mars for studying diverse environments and analyzing samples found in different settings</li>
 </ul>
 <img src="../../media/rovers/curiosityoverview.jpg" class="img-fluid mt-3" alt="">
 <hr class="hrstyle">
