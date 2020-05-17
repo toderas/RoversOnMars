@@ -148,3 +148,19 @@ MEDIA_URL = '/media/'
 #####
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 MESSAGE_STORAGE = "django.contrib.messages.storage.session.SessionStorage"
+
+## PWA settings
+PWA_APP_NAME = 'Rovers On Mars'
+PWA_APP_DESCRIPTION = "Testing this marvelous piece of technology" 
+PWA_APP_THEME_COLOR = '#0A0302' 
+PWA_APP_BACKGROUND_COLOR = '#ffffff'
+PWA_APP_DISPLAY = 'standalone' 
+PWA_APP_SCOPE = '/' 
+PWA_APP_ORIENTATION = 'any' 
+PWA_APP_START_URL = '/' 
+PWA_APP_ICONS = [ { 'src': '/media/logo.jpg', 'sizes': '160x160' } ] 
+PWA_APP_ICONS_APPLE = [ { 'src': '/media/logo.jpg', 'sizes': '160x160' } ] 
+PWA_APP_SPLASH_SCREEN = [ { 'src': '/media/logo.jpg', 'media': '(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2)' } ] 
+PWA_APP_DIR = 'ltr' 
+PWA_APP_LANG = 'en-US'
+PWA_APP_DEBUG_MODE = False
