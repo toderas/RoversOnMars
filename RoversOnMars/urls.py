@@ -26,5 +26,6 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('', home, name='home'),
     path('curiosity/', include(urls_curiosity)),
-    path('', include('pwa.urls'))
+    path('', include('pwa.urls')),
+    path('\.well-known/', include('letsencrypt.urls')),
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

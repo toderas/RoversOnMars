@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     'bootstrap4',
     'curiosity',
     'pwa',
+    'letsencrypt',
 ]
 
 MIDDLEWARE = [
@@ -158,7 +159,7 @@ PWA_APP_DISPLAY = 'standalone'
 PWA_APP_SCOPE = '/' 
 PWA_APP_ORIENTATION = 'any' 
 PWA_APP_START_URL = '/' 
-PWA_APP_ICONS = [ { 'src': '/media/favicon.png', 'sizes': '2000x160' } ] 
+PWA_APP_ICONS = [ { 'src': '/media/favicon.png', 'sizes': '200x160' } ] 
 PWA_APP_ICONS_APPLE = [ { 'src': '/media/favicon.png', 'sizes': '200x160' } ] 
 PWA_APP_SPLASH_SCREEN = [ { 'src': '/media/favicon.png', 'media': '(device-width: 620px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2)' } ] 
 PWA_APP_DIR = 'ltr' 
