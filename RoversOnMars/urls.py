@@ -16,7 +16,7 @@ Including another URLconf
 from django.conf.urls import url, include
 from django.contrib import admin
 from django.urls import path
-from .views import home
+from .views import home, sslcert
 from curiosity import urls as urls_curiosity
 from django.conf import settings
 from django.conf.urls.static import static
@@ -28,4 +28,5 @@ urlpatterns = [
     path('curiosity/', include(urls_curiosity)),
     path('', include('pwa.urls')),
     path('\.well-known/', include('letsencrypt.urls')),
+    path('.well-known/pki-validation/D4A8A9D509E77FB63021190BDE6DAD71.txt', sslcert),
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
